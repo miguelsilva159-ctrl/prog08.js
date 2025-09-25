@@ -12,9 +12,9 @@ function principal(){
 
 // let tempMaxima = 100, tensaoArduino = 5, tempSensor = 37
 
-ler tempMaxima = Number(document.getElementById('tempMaxima').value)
-ler tensaoArduino = Number(document.getElementById('tensaoArduino').value)
-ler tempSensor = Number(document.getElementById('tempSensor').value)
+let tempMaxima = Number(document.getElementById('tempMaxima').value)
+let tensaoArduino = Number(document.getElementById('tensaoArduino').value)
+let tempSensor = Number(document.getElementById('tempSensor').value)
 
 let resArduino = ( tensaoArduino * tempSensor ) /tempMaxima
 
@@ -22,7 +22,8 @@ let resArduino = ( tensaoArduino * tempSensor ) /tempMaxima
     console.log(`para uma temperatura de ${tempSensor} °C`)
 
 
-
+resposta.innerHTML ``
+resposta.innerHTML `o valor do arduino é: $(tensaoArduino)`
 
 
 

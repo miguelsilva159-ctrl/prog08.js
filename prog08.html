@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./prog08.js"></script>
-    <title>temperatusas</title>
+    <script src="./prog08.js"defer></script>
+    <title>tconversão de escala</title>
 </head>
 <body>
-    <h1>calculo de temperatura</h1>
+    <h1> sistema conversão de escala de temperatura para volts no arduino</h1>
+    <br>
+
+    <label for="tempMaxima">digite a temperatura maxima da escala</label>
+   <input type="number"  id="tempMaxima"> <br><br>
+
+    <label for="tensaoArduino">digite a tensão maxima da escala do arduino</label>
+   <input type="number"  id="tensaoArduino"> <br><br>
+
+    <label for="tempSensor">digite a temperatura do sensor</label>
+   <input type="number"  id="tempSensor"> <br><br>
+
+<button onclick="principal()">calcular</button>
+<div id="resposta"></div>
+
+
 
     
 </body>
